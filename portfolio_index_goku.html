@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Goku — Editor / VFX</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0a0a0a; /* Dark background */
+      --text:#ffffff; /* Main text color */
+      --muted:#bbbbbb; /* Subtitles */
+      --accent:#ffffff; /* Button color */
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%; margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:var(--text); line-height:1.35;}
+
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:48px 20px;}
+    .hero{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-direction:column;
+      text-align:center;
+      padding:100px 0;
+    }
+    .hero h1{
+      font-size:60px;
+      margin:0 0 10px;
+      font-weight:800;
+      letter-spacing:-0.02em;
+    }
+    .hero p{
+      margin:0 0 20px;
+      color:var(--muted);
+      font-weight:500;
+      font-size:20px;
+    }
+    .cta{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:10px;
+      text-decoration:none;
+      background:var(--accent);
+      color:var(--bg);
+      font-weight:700;
+      font-size:16px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:28px;
+      margin-top:60px;
+    }
+    .card{
+      padding:20px;
+      border-radius:12px;
+      background:#111;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-start;
+      gap:12px;
+      min-height:220px;
+    }
+    .card img{width:100%;border-radius:10px;object-fit:cover;height:140px;background:#222}
+    .card h3{margin:0;font-size:18px;color:#fff}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+
+    .divider{height:1px;background:#222;margin:60px 0;border-radius:2px}
+
+    footer{padding:36px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:920px){
+      .grid{grid-template-columns:repeat(2,1fr)}
+      .hero h1{font-size:48px}
+    }
+    @media (max-width:600px){
+      .grid{grid-template-columns:1fr}
+      .hero h1{font-size:36px}
+      .wrap{padding:28px 16px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero" role="banner">
+      <h1>Yo, I am <strong>Goku</strong></h1>
+      <p>From rough footage to refined stories. — Video Editor & VFX</p>
+      <a class="cta" href="https://x.com/yourhandle" target="_blank" rel="noopener">Work with me!</a>
+    </header>
+
+    <section aria-label="showcase">
+      <div class="grid">
+        <article class="card">
+          <a href="https://youtu.be/VJkwlr1whdY" target="_blank">
+            <img src="https://img.youtube.com/vi/VJkwlr1whdY/0.jpg" alt="UNBOXING 100+ KINDER JOY BATMAN EDITION! LUCKIEST OPENING EVER">
+            <h3>UNBOXING 100+ KINDER JOY BATMAN EDITION! LUCKIEST OPENING EVER</h3>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://youtu.be/F7o3P91hH28" target="_blank">
+            <img src="https://img.youtube.com/vi/F7o3P91hH28/0.jpg" alt="I ORDERED NARUTO ACTION FIGURE FROM MEESHO!">
+            <h3>I ORDERED NARUTO ACTION FIGURE FROM MEESHO!</h3>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://youtu.be/T2cTsJyRy-k" target="_blank">
+            <img src="https://img.youtube.com/vi/T2cTsJyRy-k/0.jpg" alt="I BECOME A TEACHER FOR A DAY!">
+            <h3>I BECOME A TEACHER FOR A DAY!</h3>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://youtu.be/TxWuqUwK378" target="_blank">
+            <img src="https://img.youtube.com/vi/TxWuqUwK378/0.jpg" alt="I BECOME VIRAT KOHLI IN CRICKET! VR GAME">
+            <h3>I BECOME VIRAT KOHLI IN CRICKET! VR GAME</h3>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://youtu.be/4CyBlAQGUAM" target="_blank">
+            <img src="https://img.youtube.com/vi/4CyBlAQGUAM/0.jpg" alt="I Become a Night Club SECURITY GUARD.. (VR)">
+            <h3>I Become a Night Club SECURITY GUARD.. (VR)</h3>
+          </a>
+        </article>
+        <article class="card">
+          <a href="https://youtu.be/5K0YrNOIsBA" target="_blank">
+            <img src="https://img.youtube.com/vi/5K0YrNOIsBA/0.jpg" alt="WE BECOME NARUTO IN FREE FIRE!">
+            <h3>WE BECOME NARUTO IN FREE FIRE!</h3>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <div class="divider" role="separator"></div>
+
+    <footer>
+      <p>Work with an editor who sees the story before it's told — just a message away.</p>
+      <p style="margin-top:10px"><a class="cta" href="https://x.com/yourhandle" target="_blank" rel="noopener">Work With Me!</a></p>
+    </footer>
+  </main>
+</body>
+</html>
